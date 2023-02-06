@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1b56af09-9e16-4a3d-ad17-e6561dfef039">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="IdBill" class="java.lang.String"/>
+	<field name="DateFounded" class="java.time.LocalDate"/>
+	<field name="NameStaff" class="java.lang.String"/>
+	<field name="nameMedicine" class="java.lang.String"/>
+	<field name="amountMedicine" class="java.lang.Float"/>
+	<field name="sale" class="java.lang.Float"/>
+	<field name="price" class="java.lang.Float"/>
+	<field name="total" class="java.lang.Float"/>
+	<field name="changeMoney" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="-6" width="230" height="30" uuid="1681aadf-0288-40ab-844e-8ab9ef385d86"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HealthMart Pharmacy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="24" width="260" height="26" uuid="50457b83-9d14-4700-8fa5-33adb45f16a6"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address: 35/6, D5, P27, Q. Binh Thanh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="100" width="595" height="51" uuid="310ef833-2143-4b4f-92d5-cd51ccab378f"/>
+				<textElement textAlignment="Center">
+					<font size="35" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RETAIL BILL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="40" width="145" height="24" uuid="7ed70cac-f936-418e-946d-b83debbe15ff"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hotline: 19001778]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="58" width="204" height="26" uuid="a0ea3360-e1d2-4543-b488-dfe7e30850cb"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[E-mail: healmart.123@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="80" width="150" height="30" uuid="95a40654-e0a8-4c14-b2db-e9699dd3d185"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[https://healthmart.com]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="180" height="80" uuid="0eb01f48-b0f1-4e9a-8040-1d3bbd5c5894"/>
+				<imageExpression><![CDATA["src/main/resources/image/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="60" height="20" uuid="bbecf025-9e6b-40dd-9772-a3873892abdc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id bill:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="20" width="70" height="20" uuid="4a9443b9-d9e2-4d4b-8d2b-6090f0225859"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date bill:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="40" width="70" height="20" uuid="e46a309d-58fb-4538-b770-ddb47ba80850"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cashier:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="0" width="250" height="20" uuid="e267d6e7-6b55-49d2-ac31-0abf3dcf8fd2"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IdBill}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="21" width="250" height="19" uuid="dea5c1c2-863a-47f2-9328-7cd9098e2380"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DateFounded}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="40" width="250" height="20" uuid="375363d9-4358-405c-aa2d-33cc9d5dd33c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameStaff}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="30" width="100" height="30" uuid="46d1dc10-a377-4d3e-ad8d-29ae43dd772b"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medicine]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="30" width="110" height="30" uuid="b138b3e8-701e-401a-959c-158fcd6a223d"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="30" width="100" height="30" uuid="32e45f38-5dc7-4a8c-ba8e-8a120b9fd831"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="30" width="100" height="30" uuid="2bacedf7-64a6-4b0c-b522-d27a60654ca7"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="114" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="100" height="50" uuid="d28d6bff-80cd-400b-a2d3-b126fb469960">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="414e88da-bf37-41ea-afca-f0a40c48e12b"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nameMedicine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="10" width="120" height="50" uuid="c7c71793-e829-4259-815a-978d45289d2d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="94d632ca-40fd-494b-9d72-6d17f194e733"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amountMedicine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="10" width="114" height="50" uuid="ca9923bc-007b-468a-814c-71cef1b13baf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0fe2baa1-c414-4e41-a505-a182f38a80c1"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="10" width="110" height="50" uuid="5b14cc91-d674-4010-a8d9-eef68de038fc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fb690ab6-92c2-4cd7-b551-ce424c597347"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="6" width="110" height="30" uuid="a8200b82-64b7-47d3-9c74-48287dfc36b6"/>
+				<textElement textAlignment="Left">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="449" y="10" width="126" height="30" uuid="fb7263cd-a804-42b5-b125-5e8d0a963e93"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="10" width="335" height="40" uuid="546ab756-318e-45ad-85dd-498a5f37d583"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YOU ARE WELLCOME]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="95" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,2 @@
+nhớ đổi tên file trong db.properties
+trong file jframe login gì đó nhập pass zô từ đó đấy
